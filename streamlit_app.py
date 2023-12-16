@@ -4,6 +4,12 @@ import pandas as pd
 import pickle as pk
 
 data = pd.read_csv('./response.csv') 
+
+st.set_page_config(
+    page_title="Begaluru House Price Prediction"
+)
+
+
 st.title("Begaluru House Price Prediction")
 
 selected_location = st.selectbox("Select Location",data['location'].unique(),index=None)
