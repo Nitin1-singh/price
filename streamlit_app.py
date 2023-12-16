@@ -15,12 +15,9 @@ if 'ans' not in st.session_state:
     st.session_state['ans'] = False 
 
 def eval_price():
-    try:
-        pipe = pk.load(open('./model.pkl','rb'))
-        val = pipe.predict([[selected_location,selected_sqft.astype(float),selected_bath.astype(float),selected_bhk.astype(float)]])
-        st.write(f"Predicted Price: ${val[0].astype(int)} Lakh")
-    except :
-        st.write('Error select all option')
+    pipe = pk.load(open('./model.pkl','rb'))
+    val = pipe.predict([[selected_location,selected_sqft.astype(float),selected_bath.astype(float),selected_bhk.astype(float)]])
+    st.write(f"Predicted Price: ${val[0].astype(int)} Lakh")
 
 
 col1, col2 = st.columns([1,1])
