@@ -62,9 +62,6 @@ Hello, this is version 1 of my online house price prediction model, which is now
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 The tools I employed for my portfolio
