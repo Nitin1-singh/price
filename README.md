@@ -95,7 +95,7 @@ The list of software you need:
 2. Clone the repo
 
    ```sh
-   git clone https://github.com/Nitin1-singh/portfolio-v1.git
+   git clone https://github.com/Nitin1-singh/price.git
    ```
 
 3. Install Python Module
